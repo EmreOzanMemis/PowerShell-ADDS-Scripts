@@ -1,0 +1,3 @@
+$When = ((Get-Date).AddDays(-30)).Date
+$A = get-eventlog -LogName Security -InstanceId 4727 -after $When
+$A | Select-Object -Property *
