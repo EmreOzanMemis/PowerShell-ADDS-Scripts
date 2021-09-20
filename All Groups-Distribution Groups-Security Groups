@@ -1,0 +1,6 @@
+//Distribution Groups
+Get-ADGroup -Filter 'GroupCategory -eq "Distribution"'
+
+
+//Security Groups
+Get-ADGroup -Filter 'GroupCategory -eq "Security"'
