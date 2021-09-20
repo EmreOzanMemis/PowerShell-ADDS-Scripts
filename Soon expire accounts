@@ -1,0 +1,1 @@
+Get-ADUser -Filter 'enabled -eq $true' -Properties AccountExpirationDate | Select sAMAccountName, distinguishedName, AccountExpirationDate
