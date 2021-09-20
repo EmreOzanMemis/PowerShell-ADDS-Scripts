@@ -4,3 +4,9 @@ Get-ADUser -Filter {whenCreated -ge $When} -Properties whenCreated
 
 //-Alternatif-2
 Get-ADUser -Filter * -Properties Created | Select-Object Name,Created | Sort-Object Created
+
+
+//-Alternatif-3
+$When = ((Get-Date).AddDays(-30)).Date
+$A = get-eventlog -LogName Security -InstanceId 4720 -after $When
+$A | Select-Object -Property *
