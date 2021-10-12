@@ -1,0 +1,1 @@
+Get-ADUser -LDAPFilter "(&(&(objectCategory=person)(objectClass=user)(!isCriticalSystemObject=TRUE))(|(lastLogon=0)(!(lastLogon=*))))"
