@@ -1,0 +1,1 @@
+Search-ADAccount -AccountInactive -UsersOnly -TimeSpan 30.00:00:00
