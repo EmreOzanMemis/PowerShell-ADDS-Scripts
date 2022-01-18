@@ -1,1 +1,3 @@
 Get-ADUser -Identity "username" -Properties "LastLogonDate"
+or
+Get-ADUser -Filter {Name -eq "username"} -Properties * | Select-Object Name, @{N='LastLogon'; E={[DateTime]::FromFileTime($_.LastLogon)}}
