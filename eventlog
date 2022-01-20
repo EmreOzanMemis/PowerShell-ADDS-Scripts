@@ -1,0 +1,11 @@
+Get-EventLog -?
+
+Get-EventLog -list
+
+Get-EventLog Application
+
+Get-EventLog Application -EntryType Error
+
+Get-EventLog application -newest 1 | Get-Member
+
+Get-EventLog system -after (get-date).AddDays(-1) | where {$_.InstanceId -eq 7001}
