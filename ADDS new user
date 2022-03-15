@@ -1,0 +1,1 @@
+New-ADUser -GivenName Emre -Surname Memis -Name "Emre Memis" -DisplayName "Emre Memis" -SamAccountName e.memis -UserPrincipalName e.memis@emreozanmemis.local -AccountPassword (ConvertTo-SecureString -AsPlainText "P@ssW0rd007" -force) -ChangePasswordAtLogon $true -Enabled $true 
