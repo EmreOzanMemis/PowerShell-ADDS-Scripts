@@ -8,7 +8,7 @@ foreach ($User in $ADUsers)
        $Password    = $User.password
        $Firstname   = $User.firstname
        $Lastname    = $User.lastname
-    $Department = $User.department
+       $Department = $User.department
        $OU           = $User.ou
 
        #Check if the user account already exists in AD
